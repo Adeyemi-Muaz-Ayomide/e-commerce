@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-primary sticky top-0">
       <div className="flex h-16  items-center justify-between bg-white">
-        <h1 className="ml-20 text-2xl uppercase">Radiate</h1>
+        <h1 className="ml-20 text-2xl uppercase italic">Shoelify</h1>
         <span className="mr-20">
           <ShoppingCartIcon />
           <MenuIcon className="ml-10" />
