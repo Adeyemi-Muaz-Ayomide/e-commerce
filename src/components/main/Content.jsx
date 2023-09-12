@@ -10,7 +10,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
   color: theme.palette.text.secondary,
   width: "100%",
-  minHeight: "35vh",
+  height: "60vh",
 }));
 
 export default function ResponsiveStack() {

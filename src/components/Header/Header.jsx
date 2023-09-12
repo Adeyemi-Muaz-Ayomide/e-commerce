@@ -67,8 +67,8 @@ export default function ButtonAppBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex" }, // Change 'none' to 'flex'
-              justifyContent: "unset", // Center items on larger screens
+              display: { xs: "none", md: "flex" },
+              justifyContent: "unset",
               alignItems: "center",
             }}
           >

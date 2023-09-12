@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import Main from "./components/main/Main";
 import Content from './components/main/Content'
+import Product from "./components/main/Product";
 
 
 const App = () => {
@@ -11,18 +12,9 @@ const App = () => {
       <Header />
       <Main>
         <Content />
-      </Main>
-      {/* <Main>
-        <Content />
         <Product />
-        <Thanks />
-      </Main> */}
-      {/* <Main>
-        <Content />
-        <Product />
-        <SeenProduct />
       </Main>
-      <Footer /> */}
+     
     </>
   );
 };
