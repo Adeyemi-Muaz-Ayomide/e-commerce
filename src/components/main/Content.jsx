@@ -1,40 +1,42 @@
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
+import * as React from "react";
+import Paper from "@mui/material/Paper";
+import Button from "../../ui/Button";
+import { styled } from "@mui/material/styles";
 
-const Content = () => {
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: "#f2ede9",
+  ...theme.typography.body2,
+  padding: theme.spacing(10),
+  textAlign: "left",
+  color: theme.palette.text.secondary,
+  width: "100%",
+  minHeight: "35vh",
+}));
+
+export default function ResponsiveStack() {
   return (
-      <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pt: 8,
-            pb: 6,
-          }}
-        >
-    <Container maxWidth="sm">
-      <Typography
-        component="h1"
-        variant="h2"
-        align="center"
-        color="text.primary"
-        gutterBottom
-      >
-        Album layout
-      </Typography>
-      <Typography variant="h5" align="center" color="text.secondary" paragraph>
-        Something short and leading about the collection below—its contents, the
-        creator, etc. Make it short and sweet, but not too short so folks
-        don&apos;t simply skip over it entirely.
-      </Typography>
-      <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-        <Button variant="contained">Main call to action</Button>
-        <Button variant="outlined">Secondary action</Button>
-      </Stack>
-    </Container>
-    </Box>
+    <Item
+      variant="outlined" square
+      sx={{
+        display: "flex",
+        justifyContent: "space-around",
+        flexDirection: { xs: "column", sm: "column", md: "row" },
+      }}
+    >
+      <div className="mb-5">
+        <h1 className="mx-auto text-4xl font-bold leading-4 tracking-tight min-[767px]:text-5xl min-[991px]:text-6xl">
+          A new age of skincare
+        </h1>
+      </div>
+      <div className="min-[991px]:mx-20">
+        <h3 className="max-w-xl text-xl">
+          Welcome to the skincare revolution. The new age of beauty is here.
+          Create a personalized routine with the best products. Helping you to
+          achieve a youthful glow like never before.
+        </h3>
+        <Button className="bg-[#6b5c4c] text-white">Shop collection</Button>
+        <Button className="bg-white text-black">Our story</Button>
+      </div>
+    </Item>
   );
-};
-
-export default Content;
+}

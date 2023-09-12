@@ -1,4 +1,6 @@
 import Header from "./components/Header/Header";
+import Main from "./components/main/Main";
+import Content from './components/main/Content'
 
 
 const App = () => {
@@ -7,6 +9,9 @@ const App = () => {
   return (
     <>
       <Header />
+      <Main>
+        <Content />
+      </Main>
       {/* <Main>
         <Content />
         <Product />
