@@ -1,14 +1,23 @@
-import Header from "./components/Header";
-import Essential from "./components/main/Essential";
-import Main from "./components/main/Main";
+import Header from "./components/Header/Header";
+
 
 const App = () => {
+
+
   return (
     <>
       <Header />
-      <Main>
-        <Essential />
+      {/* <Main>
+        <Content />
+        <Product />
+        <Thanks />
+      </Main> */}
+      {/* <Main>
+        <Content />
+        <Product />
+        <SeenProduct />
       </Main>
+      <Footer /> */}
     </>
   );
 };
