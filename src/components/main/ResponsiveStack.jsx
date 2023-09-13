@@ -1,18 +1,8 @@
-import Paper from "@mui/material/Paper";
+import * as React from "react";
 import Button from "../../ui/Button";
-import { styled } from "@mui/material/styles";
+import { Item } from "./Content";
 
-export const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: "#f2ede9",
-  ...theme.typography.body2,
-  padding: theme.spacing(7),
-  textAlign: "left",
-  color: theme.palette.text.secondary,
-  width: "100%",
-  height: "55vh",
-}));
-
-const Content = () => {
+export default function ResponsiveStack() {
   return (
     <Item
       variant="outlined"
@@ -24,7 +14,7 @@ const Content = () => {
         // marginTop: '50px'
       }}
     >
-      <div className="mb-1">
+      <div className="mb-5">
         <h1 className="mx-auto text-xl font-bold leading-4 tracking-tight min-[767px]:text-5xl min-[991px]:text-6xl">
           A new age of skincare
         </h1>
@@ -35,12 +25,9 @@ const Content = () => {
           Create a personalized routine with the best products. Helping you to
           achieve a youthful glow like never before.
         </h3>
-        <Button className="bg-[#6b5c4c] text-white ">Shop collection</Button>
+        <Button className="md bg-[#6b5c4c] text-white">Shop collection</Button>
         <Button className="bg-white text-black">Our story</Button>
       </div>
     </Item>
   );
-};
-
-export default Content;
-
+}

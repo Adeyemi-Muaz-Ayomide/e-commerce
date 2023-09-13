@@ -11,34 +11,34 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
-export default function ButtonAppBar() {
+export default function Header() {
   const pages = ["Shop all", "BestSellers", "Journal", "Our story", "Contact"];
   const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
+  // const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
-        variant="outlined"
+        // variant="outlined"
         square
-        sx={{ backgroundColor: "#fff", color: "#000", height: "100%" }}
+        sx={{ backgroundColor: "#fff", color: "#000" }}
       >
         <Toolbar>
           <IconButton
