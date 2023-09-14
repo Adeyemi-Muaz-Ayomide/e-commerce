@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useState } from "react";
 
 import AppBar from "@mui/material/AppBar";
@@ -11,9 +10,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
-export default function Header() {
+const Header = () => {
   const pages = ["Shop all", "BestSellers", "Journal", "Our story", "Contact"];
-  const settings = ["Profile", "Account", "Dashboard", "Logout"];
+  // const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
   const [anchorElNav, setAnchorElNav] = useState(null);
   // const [anchorElUser, setAnchorElUser] = useState(null);
@@ -76,7 +75,12 @@ export default function Header() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#000", display: "block", textAlign: "center" }}
+                sx={{
+                  my: 2,
+                  color: "#000",
+                  display: "block",
+                  textAlign: "center",
+                }}
               >
                 {page}
               </Button>
@@ -118,6 +122,8 @@ export default function Header() {
     </Box>
   );
 }
+
+export default Header;
 
 // import AppBar from "@mui/material/AppBar";
 // import Toolbar from "@mui/material/Toolbar";

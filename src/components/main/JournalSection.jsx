@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import ReusableProduct from "../../ui/ReusableProduct";
-import { Link } from "@mui/icons-material"; //For now but it is from react router
+// import { Link } from "@mui/icons-material"; //For now but it is from react router
 
 // const cards = [1, 2, 3, 4];
 const products = [
@@ -21,23 +21,23 @@ const products = [
     imageUrl: "https://source.unsplash.com/random?wallpapers",
   },
 ];
-const Product = () => {
+const Journal = () => {
   return (
     <>
       <Grid container spacing={3} sx={{ p: 8 }}>
         {products.map((product, index) => (
-          <Link>
+        //   <Link>
             <ReusableProduct
               key={index}
               productName={product.name}
               imageUrl={product.imageUrl}
             />
-          </Link>
+        //   </Link>
         ))}
       </Grid>
     </>
   );
 };
 
-export default Product;
+export default Journal;
 <h3 class="heading regular">The ultimate guide to building an effective skincare routine</h3>

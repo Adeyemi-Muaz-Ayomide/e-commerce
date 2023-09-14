@@ -1,6 +1,6 @@
 import * as React from "react";
 import Button from "../../ui/Button";
-import { Item } from "./Content";
+import { Item } from "./HomeContent";
 
 export default function ResponsiveStack() {
   return (

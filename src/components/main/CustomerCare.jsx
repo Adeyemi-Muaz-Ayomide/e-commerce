@@ -11,7 +11,7 @@ export const Item = styled(Paper)(({ theme }) => ({
   height: "50vh",
 }));
 
-const Thanks = () => {
+const CustomerCare = () => {
   return (
     <Item
       variant="outlined"
@@ -23,15 +23,8 @@ const Thanks = () => {
         // marginTop: '50px'
       }}
     >
-      <div>
-        <img
-          className="rounded-xl h-auto w-full my-6 min-[760px]:h-60 min-[991px]:h-80 min-[991px]:w-96"
-          src="https://source.unsplash.com/random?wallpapers"
-          alt="unsplash" 
-        />
-      </div>
       <div className="min-[991px]:m-10">
-        <h1 className="min-[768px]:text6xl min-[560px]:text-5xl mb-2 text-2xl font-bold">
+        <h1 className="min-[768px]:text6xl mb-2 text-2xl font-bold min-[560px]:text-5xl">
           Your feet will thank you
         </h1>
         <p className="max-w-xl text-sm min-[768px]:text-xl min-[991px]:mt-8">
@@ -41,8 +34,15 @@ const Thanks = () => {
           nulla.
         </p>
       </div>
+      <div>
+        <img
+          className="my-6 h-auto w-full rounded-xl min-[760px]:h-60 min-[991px]:h-80 min-[991px]:w-96"
+          src="https://source.unsplash.com/random?wallpapers"
+          alt="unsplash"
+        />
+      </div>
     </Item>
   );
 };
 
-export default Thanks;
+export default CustomerCare;

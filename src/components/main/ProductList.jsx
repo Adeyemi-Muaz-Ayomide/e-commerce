@@ -1,39 +1,39 @@
 import Grid from "@mui/material/Grid";
 import ReusableProduct from "../../ui/ReusableProduct";
 
+// const cards = [1, 2, 3, 4];
 const products = [
   {
     name: "Shoes 1",
     imageUrl: "https://source.unsplash.com/random?wallpapers",
-    buttonText: "Shop Scent 1",
   },
   {
     name: "Shoes 2",
     imageUrl: "https://source.unsplash.com/random?wallpapers",
-    buttonText: "Shop Scent 2",
   },
   {
     name: "Shoes 3",
     imageUrl: "https://source.unsplash.com/random?wallpapers",
-    buttonText: "Shop Scent 3",
+  },
+  {
+    name: "Shoes 4",
+    imageUrl: "https://source.unsplash.com/random?wallpapers",
   },
 ];
-
-const ShopProduct = () => {
+const ProductList = () => {
   return (
-    <Grid container spacing={3} sx={{ p: 8 }}>
-      {products.map((product, index) => (
-        <Grid item xs={12} sm={6} md={3}>
+    <>
+      <Grid container spacing={3} sx={{ p: 8 }}>
+        {products.map((product, index) => (
           <ReusableProduct
             key={index}
             productName={product.name}
             imageUrl={product.imageUrl}
-            buttonText={product.buttonText}
           />
-        </Grid>
-      ))}
-    </Grid>
+        ))}
+      </Grid>
+    </>
   );
 };
 
-export default ShopProduct;
+export default ProductList;

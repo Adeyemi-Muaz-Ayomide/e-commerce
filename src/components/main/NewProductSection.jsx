@@ -20,7 +20,7 @@ const products = [
     imageUrl: "https://source.unsplash.com/random?wallpapers",
   },
 ];
-const Product = () => {
+const NewProductSection = () => {
   return (
     <>
       <Grid container spacing={3} sx={{ p: 8 }}>
@@ -36,4 +36,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default NewProductSection;

@@ -1,25 +1,31 @@
 import Header from "./components/Header/Header";
 import Main from "./components/main/Main";
-import Content from "./components/main/ResponsiveStack";
-import Product from "./components/main/Product";
-import Sponsor from "./components/main/Sponsor";
-import ShopProduct from "./components/main/Product";
-import Thanks from './components/main/Thanks'
-import Care from "./components/main/Care";
-import NewProduct from "./components/main/NewProduct";
+import HomeContent from "./components/main/HomeContent";
+import ProductList from "./components/main/ProductList";
+import SponsorSection from "./components/main/SponsorSection";
+import ShopProductList from "./components/main/ShopProductList";
+import ThanksSection from "./components/main/ThanksSection";
+import CustomerCare from "./components/main/CustomerCare";
+import NewProductSection from "./components/main/NewProductSection";
+import JournalSection from "./components/main/JournalSection";
+import ReviewSection from "./components/main/ReviewSection";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
     <>
       <Header />
       <Main>
-        <Content />
-        <Product />
-        <Sponsor />
-        <ShopProduct />
-        <Thanks />
-        <NewProduct />
-        <Care />
+        <HomeContent />
+        <ProductList />
+        <SponsorSection />
+        <ShopProductList />
+        <ThanksSection />
+        <NewProductSection />
+        <CustomerCare />
+        <JournalSection />
+        <ReviewSection />
+        <Footer />
       </Main>
     </>
   );

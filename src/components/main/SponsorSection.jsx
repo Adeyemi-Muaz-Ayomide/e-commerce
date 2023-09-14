@@ -1,4 +1,4 @@
-const Sponsor = () => {
+const SponsorSection = () => {
   return (
     <div className="border-y-2 border-[rgba(15,23,42,.08)] p-4">
       <h3 className="">As seen on</h3>
@@ -13,4 +13,4 @@ const Sponsor = () => {
   );
 }
 
-export default Sponsor;
+export default SponsorSection;

@@ -12,7 +12,7 @@ export const Item = styled(Paper)(({ theme }) => ({
   height: "55vh",
 }));
 
-const Content = () => {
+const HomeContent = () => {
   return (
     <Item
       variant="outlined"
@@ -42,5 +42,5 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default HomeContent;
 
