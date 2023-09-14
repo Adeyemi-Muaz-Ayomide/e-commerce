@@ -1,6 +1,5 @@
 import Grid from "@mui/material/Grid";
 import ReusableProduct from "../../ui/ReusableProduct";
-import Button from "../../ui/Button";
 
 // const cards = [1, 2, 3, 4];
 const products = [

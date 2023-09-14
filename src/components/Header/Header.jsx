@@ -44,7 +44,7 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
           <div className="m-3 w-10">
-            <img src="../../../public/shoelify logo.png" alt="shoelify logo" />
+            <img src="../../../public/shoelifyLogo.png" alt="shoelify logo" />
           </div>
           <Typography
             variant="h6"
