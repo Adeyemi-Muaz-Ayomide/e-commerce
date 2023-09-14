@@ -9,7 +9,11 @@ export const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
   color: theme.palette.text.secondary,
   width: "100%",
-  height: "55vh",
+  height: "55vh", // Default height for xs screens
+  [theme.breakpoints.up("md")]: {
+    height: "75vh", // Height for md screens and larger
+    padding: theme.spacing(17), // Padding for md screens and larger
+  },
 }));
 
 const HomeContent = () => {
@@ -24,23 +28,22 @@ const HomeContent = () => {
         // marginTop: '50px'
       }}
     >
-      <div className="mb-1">
-        <h1 className="mx-auto text-xl font-bold leading-4 tracking-tight min-[767px]:text-5xl min-[991px]:text-6xl">
-          A new age of skincare
+      <div className="max-[991px]:mt-20">
+        <h1 className="font-iSerif mx-auto text-[38px] font-normal tracking-[-0.03em] text-[#0f172a] min-[767px]:text-[52px] min-[991px]:text-[100px]">
+          A new age of shoecare
         </h1>
       </div>
-      <div className="min-[991px]:mx-20">
-        <h3 className="max-w-xl text-base min-[768px]:text-xl">
+      <div className="min-[991px]:ml-20 min-[991px]:mt-20">
+        <p className="font-inter max-w-3xl text-sm font-normal tracking-[-0.01em] text-[#455366] min-[425px]:text-base min-[768px]:text-xl">
           Welcome to the skincare revolution. The new age of beauty is here.
           Create a personalized routine with the best products. Helping you to
           achieve a youthful glow like never before.
-        </h3>
-        <Button className="bg-[#6b5c4c] text-white ">Shop collection</Button>
-        <Button className="bg-white text-black">Our story</Button>
+        </p>
+        <Button className="bg-[#6b5c4c] text-white min-[991px]:w-48 min-[991px]:mr-5">Shop collection</Button>
+        <Button className="bg-white text-black min-[991px]:w-48">Our story</Button>
       </div>
     </Item>
   );
 };
 
 export default HomeContent;
-

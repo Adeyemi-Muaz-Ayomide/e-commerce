@@ -8,15 +8,10 @@ export default {
         primary: "#f2ede9",
       },
     },
-    screens: {
-      tablet: "640px",
-      // => @media (min-width: 640px) { ... }
-
-      laptop: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      desktop: "1280px",
-      // => @media (min-width: 1280px) { ... }
+    fontFamily: {
+      roboto: ['Roboto', 'sans'],
+      iSerif: ['Instrument Serif', 'serif'],
+      inter: ['Inter, sans-serif']
     },
   },
   plugins: [],
