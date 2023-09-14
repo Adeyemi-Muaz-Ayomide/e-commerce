@@ -5,6 +5,8 @@ import Product from "./components/main/Product";
 import Sponsor from "./components/main/Sponsor";
 import ShopProduct from "./components/main/Product";
 import Thanks from './components/main/Thanks'
+import Care from "./components/main/Care";
+import NewProduct from "./components/main/NewProduct";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Sponsor />
         <ShopProduct />
         <Thanks />
+        <NewProduct />
+        <Care />
       </Main>
     </>
   );
