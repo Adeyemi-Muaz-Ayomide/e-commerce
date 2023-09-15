@@ -19,13 +19,13 @@ const products = [
     name: "Dunlop",
     imageUrl: "https://source.unsplash.com/random?wallpapers",
     productUsage: 'Eaaaazy',
-    productPrice: '$15.00 USD'
+    productPrice: '$25.00 USD'
   },
   {
     name: "Crocs",
     imageUrl: "https://source.unsplash.com/random?wallpapers",
     productUsage: 'sooooft',
-    productPrice: '$15.00 USD'
+    productPrice: '$55.00 USD'
   },
 ];
 const ProductList = () => {

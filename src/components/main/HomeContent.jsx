@@ -9,7 +9,7 @@ export const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
   color: theme.palette.text.secondary,
   width: "100%",
-  height: "55vh", // Default height for xs screens
+  height: "70vh", // Default height for xs screens
   [theme.breakpoints.up("md")]: {
     height: "75vh", // Height for md screens and larger
     padding: theme.spacing(17), // Padding for md screens and larger
@@ -29,7 +29,7 @@ const HomeContent = () => {
       }}
     >
       <div className="max-[991px]:mt-20">
-        <h1 className="font-iSerif mx-auto text-[38px] font-normal tracking-[-0.03em] text-[#0f172a] min-[767px]:text-[52px] min-[991px]:text-[100px]">
+        <h1 className="font-iSerif mx-auto text-[35px] font-normal tracking-[-0.03em] text-[#0f172a] min-[767px]:text-[52px] min-[991px]:text-[100px]">
           A new age of shoecare
         </h1>
       </div>
