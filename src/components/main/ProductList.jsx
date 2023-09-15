@@ -31,15 +31,15 @@ const products = [
 const ProductList = () => {
   return (
     <>
-      <div className="mx-16 mt-10 flex items-center justify-between">
-        <h3 className="font-iSerif text-[30px] font-normal leading-5 tracking-[.1em] min-[676px]:text-[40px]">
+      <div className="mx-10 mt-10 flex items-center justify-between">
+        <h3 className="font-iSerif text-[30px] font-normal leading-5 md:text-[40px] md:tracking-[0.1em]">
           Bestselling
         </h3>
         <button className="w-20 rounded-[10px] border bg-white p-2 hover:opacity-80">
           Shop all
         </button>
       </div>
-      <Grid container spacing={3} sx={{ p: 8 }}>
+      <Grid container spacing={3} sx={{ p: 5 }}>
         {products.map((product, index) => (
           <ReusableProduct
             key={index}

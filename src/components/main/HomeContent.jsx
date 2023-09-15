@@ -5,14 +5,22 @@ import { styled } from "@mui/material/styles";
 export const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#f2ede9",
   ...theme.typography.body2,
-  padding: theme.spacing(7),
+  // padding: theme.spacing(7),
   textAlign: "left",
   color: theme.palette.text.secondary,
   width: "100%",
-  height: "70vh", // Default height for xs screens
+  // height: "55vh", // Default height for xs screens
+  [theme.breakpoints.up("xs")]: {
+    height: "50%", // Height for md screens and larger
+    padding: theme.spacing(5), // Padding for md screens and larger
+  },
+  [theme.breakpoints.up("sm")]: {
+    height: "55%", // Height for md screens and larger
+    padding: theme.spacing(8), // Padding for md screens and larger
+  },
   [theme.breakpoints.up("md")]: {
-    height: "75vh", // Height for md screens and larger
-    padding: theme.spacing(17), // Padding for md screens and larger
+    height: "60%", // Height for md screens and larger
+    padding: theme.spacing(11), // Padding for md screens and larger
   },
 }));
 
@@ -28,12 +36,12 @@ const HomeContent = () => {
         // marginTop: '50px'
       }}
     >
-      <div className="max-[991px]:mt-20">
-        <h1 className="font-iSerif mx-auto text-[35px] font-normal tracking-[-0.03em] text-[#0f172a] min-[767px]:text-[52px] min-[991px]:text-[100px]">
+      <div className="mt-12 md:mt-14">
+        <h1 className="font-iSerif mx-auto text-[35px] font-normal tracking-[-0.03em] text-[#0f172a] md:text-[52px] lg:text-[90px]">
           A new age of shoecare
         </h1>
       </div>
-      <div className="min-[991px]:ml-20 min-[991px]:mt-20">
+      <div className="lg:ml-20 lg:mt-28">
         <p className="font-inter max-w-3xl text-sm font-normal tracking-[-0.01em] text-[#455366] min-[425px]:text-base min-[768px]:text-xl">
           Welcome to the skincare revolution. The new age of beauty is here.
           Create a personalized routine with the best products. Helping you to
