@@ -66,7 +66,7 @@ const ReviewSection = () => {
         columns={{ xs: 4, sm: 8, md: 12, lg: 15 }}
       >
         {review.map((item, index) => (
-          <Grid xs={12} sm={4} md={4} lg={6} key={index}>
+          <Grid xs={12} sm={4} md={4} lg={5} key={index}>
             <div className="mx-6 my-5">
               <Card sx={{ borderRadius: "10px" }}>
                 <CardContent sx={{ margin: "15px" }}>
