@@ -24,15 +24,23 @@ const products = [
 const Journal = () => {
   return (
     <>
-      <Grid container spacing={3} sx={{ p: 8 }}>
+      <div className="mx-10 mt-5 flex items-center justify-between">
+        <h3 className="font-iSerif text-[22px] font-normal leading-5 md:text-[40px] md:tracking-[0.1em]">
+          From our journal
+        </h3>
+        <button className="w-15 rounded-[10px] border bg-white p-2 hover:opacity-80">
+          Read all
+        </button>
+      </div>
+      <Grid container spacing={3} sx={{ p: 3 }}>
         {products.map((product, index) => (
-        //   <Link>
-            <ReusableProduct
-              key={index}
-              productName={product.name}
-              imageUrl={product.imageUrl}
-            />
-        //   </Link>
+          <ReusableProduct
+            key={index}
+            productName={product.name}
+            imageUrl={product.imageUrl}
+          />
+
+          //   </Link>
         ))}
       </Grid>
     </>
@@ -40,4 +48,13 @@ const Journal = () => {
 };
 
 export default Journal;
-<h3 class="heading regular">The ultimate guide to building an effective skincare routine</h3>
+
+// sx={{
+//         display: "flex",
+//         flexDirection: "column",
+//         width: "100%",
+//         justifyContent: "center",
+//         alignItems: "center",
+//         marginTop: "10px",
+//         maxWidth: "150%",
+//       }}

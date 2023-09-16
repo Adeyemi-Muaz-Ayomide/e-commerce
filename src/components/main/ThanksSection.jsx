@@ -4,14 +4,20 @@ import { styled } from "@mui/material/styles";
 export const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#6b5c4c",
   ...theme.typography.body2,
-  padding: theme.spacing(7),
   textAlign: "left",
   color: theme.palette.text.secondary,
   width: "100%",
-  height: "80vh", // Default height for xs screens
+  [theme.breakpoints.up("xs")]: {
+    height: "50%", // Height for md screens and larger
+    padding: theme.spacing(5), // Padding for xs screens 
+  },
+  [theme.breakpoints.up("sm")]: {
+    height: "55%", // Height for md screens and larger
+    padding: theme.spacing(8), // Padding for md screens 
+  },
   [theme.breakpoints.up("md")]: {
-    height: "95vh", // Height for md screens and larger
-    padding: theme.spacing(10), // Padding for md screens and larger
+    height: "57%", // Height for md screens and larger
+    padding: theme.spacing(9), // Padding for md screens and larger
   },
 }));
 const ThanksSection = () => {
@@ -28,16 +34,16 @@ const ThanksSection = () => {
     >
       <div>
         <img
-          className="rounded-xl w-[100%] h-full min-[991px]:w-[80%]"
+          className="h-[100%] w-[100%] rounded-xl lg:h-[100%] lg:w-[90%]"
           src="https://source.unsplash.com/random?wallpapers"
           alt="unsplash"
         />
       </div>
-      <div className="text-[#f2ede9] min-[991px]:my-24 min-[991px]:ml-10">
-        <h1 className="my-6 font-iSerif text-4xl font-normal leading-[0.95em] tracking-[-0.03em] min-[560px]:text-[52px] min-[768px]:text-[92px]">
+      <div className="max-w-sm text-[#f2ede9] md:max-w-xl lg:max-w-sm">
+        <h1 className="my-5 font-iSerif text-4xl font-normal leading-[0.95em] tracking-[-0.03em] min-[560px]:text-[52px] lg:text-[82px]">
           Your feet will thank you
         </h1>
-        <p className="max-w-xl text-sm min-[768px]:text-[16px] leading-6 tracking-[.01em] min-[991px]:mt-5">
+        <p className=" font-inter text-[12px] leading-6 tracking-[.01em] min-[768px]:text-[16px] lg:mt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias
           ea odit illo voluptatibus commodi quam repudiandae totam, quas
           molestias iusto placeat ipsam optio corporis reiciendis! Quos ex eos
