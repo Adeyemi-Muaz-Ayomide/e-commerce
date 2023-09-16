@@ -19,7 +19,7 @@ const App = () => {
         <HomeContent />
         <ProductList />
         <SponsorSection />
-        <ShopProductList />
+        {/* <ShopProductList /> */}
         <ThanksSection />
         <NewProductSection />
         <CustomerCare />

@@ -11,15 +11,15 @@ export const Item = styled(Paper)(({ theme }) => ({
   width: "100%",
   // height: "55vh", // Default height for xs screens
   [theme.breakpoints.up("xs")]: {
-    height: "50%", // Height for md screens and larger
+    height: "55%", // Height for md screens and larger
     padding: theme.spacing(5), // Padding for md screens and larger
   },
   [theme.breakpoints.up("sm")]: {
-    height: "55%", // Height for md screens and larger
+    height: "58%", // Height for md screens and larger
     padding: theme.spacing(8), // Padding for md screens and larger
   },
   [theme.breakpoints.up("md")]: {
-    height: "60%", // Height for md screens and larger
+    height: "63%", // Height for md screens and larger
     padding: theme.spacing(11), // Padding for md screens and larger
   },
 }));
@@ -41,7 +41,7 @@ const HomeContent = () => {
           A new age of shoecare
         </h1>
       </div>
-      <div className="lg:ml-20 lg:mt-28">
+      <div className="lg:ml-20 lg:mt-32">
         <p className="font-inter max-w-3xl text-sm font-normal tracking-[-0.01em] text-[#455366] min-[425px]:text-base min-[768px]:text-xl">
           Welcome to the skincare revolution. The new age of beauty is here.
           Create a personalized routine with the best products. Helping you to
