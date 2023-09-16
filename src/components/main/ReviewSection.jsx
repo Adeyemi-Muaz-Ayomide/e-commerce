@@ -96,9 +96,12 @@ const ReviewSection = () => {
                   >
                     {item.review}
                   </Typography>
-                  <div className="mt-4">
-                    <h3 className="text-[16px] font-medium">{item.name}</h3>
-                    <h4 className="text-[14px] text-[#455366]">@handle</h4>
+                  <div className="mt-4 flex ">
+                    <img src={item.image} alt={item.name} className="rounded-full" />
+                    <div className="ml-4">
+                      <h3 className="text-[16px] font-medium">{item.name}</h3>
+                      <h4 className="text-[14px] text-[#455366]">@handle</h4>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
