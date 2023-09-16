@@ -11,15 +11,15 @@ export const Item = styled(Paper)(({ theme }) => ({
   width: "100%",
   // height: "55vh", // Default height for xs screens
   [theme.breakpoints.up("xs")]: {
-    height: "55%", // Height for md screens and larger
+    height: "50%", // Height for md screens and larger
     padding: theme.spacing(5), // Padding for md screens and larger
   },
   [theme.breakpoints.up("sm")]: {
-    height: "58%", // Height for md screens and larger
+    height: "55%", // Height for md screens and larger
     padding: theme.spacing(8), // Padding for md screens and larger
   },
   [theme.breakpoints.up("md")]: {
-    height: "63%", // Height for md screens and larger
+    height: "60%", // Height for md screens and larger
     padding: theme.spacing(11), // Padding for md screens and larger
   },
 }));

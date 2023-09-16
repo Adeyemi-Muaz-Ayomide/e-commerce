@@ -7,7 +7,7 @@ const SponsorSection = () => {
       <ul className="flex items-center justify-evenly max-[600px]:ml-4">
         <li className=" text-center ">
           <img
-            src="../../../public/adidas.png"
+            src="/images/adidas.png"
             alt="adidas logo"
             height="100px"
             width="100px"
@@ -15,7 +15,7 @@ const SponsorSection = () => {
         </li>
         <li className="md:w">
           <img
-            src="../../../public/nike.png"
+            src="/images/nike.png"
             alt="nike logo"
             height="100px"
             width="100px"
@@ -23,28 +23,12 @@ const SponsorSection = () => {
         </li>
         <li className=" md:w">
           <img
-            src="../../../public/puma.png"
+            src="/images/puma.png"
             alt="puma logo"
             height="100px"
             width="100px"
           />
         </li>
-        {/* <li className="md:w">
-          <img
-            src="../../../public/accentLogo.png"
-            alt="accent logo"
-            height="100px"
-            width="100px"
-          />
-        </li>
-        <li className=" md:w">
-          <img
-            src="../../../public/compose.png"
-            alt="compose logo"
-            height="100px"
-            width="100px"
-          />
-        </li> */}
       </ul>
     </div>
   );
