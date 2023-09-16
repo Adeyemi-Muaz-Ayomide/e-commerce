@@ -34,12 +34,12 @@ const ThanksSection = () => {
     >
       <div>
         <img
-          className="h-[80%] w-[100%] rounded-xl lg:h-[100%] lg:w-[90%]"
+          className="h-[80%] w-[100%] rounded-xl lg:h-[100%] lg:w-[80%]"
           src="https://source.unsplash.com/random?wallpapers"
           alt="unsplash"
         />
       </div>
-      <div className="max-w-sm text-[#f2ede9] md:max-w-xl lg:max-w-sm">
+      <div className="max-w-sm text-[#f2ede9] md:max-w-xl lg:max-w-lg">
         <h1 className="my-5 font-iSerif text-4xl font-normal leading-[0.95em] tracking-[-0.03em] min-[560px]:text-[52px] lg:text-[82px] lg:my-5">
           Your feet will thank you
         </h1>

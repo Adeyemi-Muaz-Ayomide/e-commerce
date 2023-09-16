@@ -38,7 +38,7 @@ const CustomerCare = () => {
         },
       }}
     >
-      <div className="max-w-sm md:max-w-xl lg:max-w-sm">
+      <div className="max-w-sm md:max-w-xl lg:max-w-xl">
         <h1 className="font-iSerif text-4xl font-normal leading-[0.95em] tracking-[-0.03em] text-[#0f172a] min-[560px]:text-[52px] lg:text-[82px] my-5">
           Real care for real people
         </h1>
@@ -51,7 +51,7 @@ const CustomerCare = () => {
       </div>
       <div>
         <img
-          className="h-[100%] w-[100%] rounded-xl lg:w-[100%] lg:ml-10"
+          className="h-[100%] w-[100%] rounded-xl lg:w-[80%] lg:ml-20"
           src="https://source.unsplash.com/random?wallpapers"
           alt="unsplash"
         />
